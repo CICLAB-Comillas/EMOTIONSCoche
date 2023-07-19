@@ -89,4 +89,8 @@ Tras entrenar el modelo, obtuvimos una aproximación. Esta es la alamcenada en c
     + Recorre cada audio de la carpeta .wav por ORDEN: 
         - si no existe el audio1, no pasa al audio2 --> entra en bucle infinito
         - OjO con el nombre de los audios y rutas --> si lo cambias en el archivo de antes, aquí también
+        - en la línea 491 se especifica la ruta:
+          ~~~
+          carpeta = "Audios/wav/p"+ str(cont)+".*.wav"
+          ~~~
     + Genera una imagen por cada 4 .wavs (una grabación) y los mete en la carpeta fotos
